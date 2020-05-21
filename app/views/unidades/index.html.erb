@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Unidades</h2>
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Cadastro</th>
+      <th>Insc imob</th>
+      <th>Insc imb anterior</th>
+      <th>Unidade</th>
+      <th>Tipo imovel</th>
+      <th>Matricula</th>
+      <th>Cod face</th>
+      <th>Quadra</th>
+      <th>Lote</th>
+      <th>Sub lote</th>
+      <th>Setor</th>
+      <th>Loteamento</th>
+      <th>Zoneamento</th>
+      <th>Logradouro</th>
+      <th>Cep</th>
+      <th>Numero</th>
+      <th>Complemento</th>
+      <th>Info complementar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unidades.each do |unidade| %>
+      <tr>
+        <td><%= unidade.cadastro_id %></td>
+        <td><%= unidade.insc_imob %></td>
+        <td><%= unidade.insc_imb_anterior %></td>
+        <td><%= unidade.unidade %></td>
+        <td><%= unidade.tipo_imovel %></td>
+        <td><%= unidade.matricula %></td>
+        <td><%= unidade.cod_face %></td>
+        <td><%= unidade.quadra %></td>
+        <td><%= unidade.lote %></td>
+        <td><%= unidade.sub_lote %></td>
+        <td><%= unidade.setor %></td>
+        <td><%= unidade.loteamento %></td>
+        <td><%= unidade.zoneamento %></td>
+        <td><%= unidade.logradouro %></td>
+        <td><%= unidade.cep %></td>
+        <td><%= unidade.numero %></td>
+        <td><%= unidade.complemento %></td>
+        <td><%= unidade.info_complementar %></td>
+        <td><%= link_to 'Show', unidade %></td>
+        <td><%= link_to 'Edit', edit_unidade_path(unidade) %></td>
+        <td><%= link_to 'Destroy', unidade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+
+<br>
+
+<%= link_to 'New Unidade', new_unidade_path %>

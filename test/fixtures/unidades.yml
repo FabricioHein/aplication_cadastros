@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cadastro: one
+  insc_imob: MyString
+  insc_imb_anterior: MyString
+  unidade: 1
+  tipo_imovel: MyString
+  matricula: MyString
+  cod_face: MyString
+  quadra: MyString
+  lote: MyString
+  sub_lote: MyString
+  setor: MyString
+  loteamento: MyString
+  zoneamento: MyString
+  logradouro: MyString
+  cep: MyString
+  numero: MyString
+  complemento: MyString
+  info_complementar: MyText
+
+two:
+  cadastro: two
+  insc_imob: MyString
+  insc_imb_anterior: MyString
+  unidade: 1
+  tipo_imovel: MyString
+  matricula: MyString
+  cod_face: MyString
+  quadra: MyString
+  lote: MyString
+  sub_lote: MyString
+  setor: MyString
+  loteamento: MyString
+  zoneamento: MyString
+  logradouro: MyString
+  cep: MyString
+  numero: MyString
+  complemento: MyString
+  info_complementar: MyText

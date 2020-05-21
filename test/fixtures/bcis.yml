@@ -1,0 +1,83 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unidade: one
+  data_cadastro: 2020-05-21 17:13:50
+  zoneamento: MyString
+  tp_patrimonio: MyString
+  classe_edif: MyString
+  pavimento: 1
+  padrao: MyString
+  utilizacao: MyString
+  material: MyString
+  ano_const: 2020-05-21 17:13:50
+  area_const: 9.99
+  area_lote: 9.99
+  test_frente: 9.99
+  test_direita: 9.99
+  test_fundos: 9.99
+  test_esquerda: 9.99
+  n_test: 9.99
+  area_test: 9.99
+  qtd_test: 9.99
+  profu: 9.99
+  sarjeta: false
+  coleta_lixo: false
+  agua: false
+  esgoto: false
+  iluminacao: false
+  energia: false
+  pavimentacao: false
+  telefone: false
+  guia: false
+  situacao_lote: MyString
+  pedologia: MyString
+  urbanismo: false
+  terreno: MyString
+  nivel_rua: MyString
+  ocupacao: MyString
+  valor_m_terreno: 9.99
+  valor_venal: 9.99
+  valor_pvg: 9.99
+  descricao: MyText
+
+two:
+  unidade: two
+  data_cadastro: 2020-05-21 17:13:50
+  zoneamento: MyString
+  tp_patrimonio: MyString
+  classe_edif: MyString
+  pavimento: 1
+  padrao: MyString
+  utilizacao: MyString
+  material: MyString
+  ano_const: 2020-05-21 17:13:50
+  area_const: 9.99
+  area_lote: 9.99
+  test_frente: 9.99
+  test_direita: 9.99
+  test_fundos: 9.99
+  test_esquerda: 9.99
+  n_test: 9.99
+  area_test: 9.99
+  qtd_test: 9.99
+  profu: 9.99
+  sarjeta: false
+  coleta_lixo: false
+  agua: false
+  esgoto: false
+  iluminacao: false
+  energia: false
+  pavimentacao: false
+  telefone: false
+  guia: false
+  situacao_lote: MyString
+  pedologia: MyString
+  urbanismo: false
+  terreno: MyString
+  nivel_rua: MyString
+  ocupacao: MyString
+  valor_m_terreno: 9.99
+  valor_venal: 9.99
+  valor_pvg: 9.99
+  descricao: MyText

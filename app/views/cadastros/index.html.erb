@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+
+ <h2>Cadastros Contribuintes</h2>
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>CPF/IE</th>
+      <th>RG/IE</th>
+      <th>CNH</th>
+      <th>DATA DOC</th>
+      <th>TELEFONE</th>
+      <th>ESTADO</th>
+      <th>CIDADE</th>
+      <th>BAIRRO</th>
+      <th>LOGRADOURO</th>
+      <th>CEP</th>
+      <th>NÚMERO</th>
+      <th>COMPLEMENTO</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastros.each do |cadastro| %>
+      <tr>
+        <td><%= cadastro.nome %></td>
+        <td><%= cadastro.cpf_cnpj %></td>
+        <td><%= cadastro.rg_inscr_estadual %></td>
+        <td><%= cadastro.cnh %></td>
+        <td><%= cadastro.data_doc %></td>
+        <td><%= cadastro.telefone %></td>
+        <td><%= cadastro.estado %></td>
+        <td><%= cadastro.cidade %></td>
+        <td><%= cadastro.bairro %></td>
+        <td><%= cadastro.logradouro %></td>
+        <td><%= cadastro.cep %></td>
+        <td><%= cadastro.numero %></td>
+        <td><%= cadastro.complemento %></td>
+        <td><%= link_to 'Ver', cadastro %></td>
+        <td><%= link_to 'Editar', edit_cadastro_path(cadastro) %></td>
+        <td><%= link_to 'Apagar', cadastro, method: :delete, data: { confirm: 'certeza em apagar?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+ </div>
+
+<br>

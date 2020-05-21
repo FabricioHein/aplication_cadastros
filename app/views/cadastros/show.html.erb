@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cadastro.nome %>
+</p>
+
+<p>
+  <strong>Cpf cnpj:</strong>
+  <%= @cadastro.cpf_cnpj %>
+</p>
+
+<p>
+  <strong>Rg inscr estadual:</strong>
+  <%= @cadastro.rg_inscr_estadual %>
+</p>
+
+<p>
+  <strong>Cnh:</strong>
+  <%= @cadastro.cnh %>
+</p>
+
+<p>
+  <strong>Data doc:</strong>
+  <%= @cadastro.data_doc %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @cadastro.telefone %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @cadastro.estado %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @cadastro.cidade %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @cadastro.bairro %>
+</p>
+
+<p>
+  <strong>Logradouro:</strong>
+  <%= @cadastro.logradouro %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @cadastro.cep %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @cadastro.numero %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @cadastro.complemento %>
+</p>
+
+<%= link_to 'Edit', edit_cadastro_path(@cadastro) %> |
+<%= link_to 'Back', cadastros_path %>

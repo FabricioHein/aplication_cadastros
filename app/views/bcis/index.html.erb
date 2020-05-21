@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Boletim de Cadastro Imobiliário</h1>
+
+<div class="table-responsive">
+<table class="table table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Unidade</th>
+      <th>Data cadastro</th>
+      <th>Zoneamento</th>
+      <th>Tp patrimonio</th>
+      <th>Classe edif</th>
+      <th>Pavimento</th>
+      <th>Padrao</th>
+      <th>Utilizacao</th>
+      <th>Material</th>
+      <th>Ano const</th>
+      <th>Area const</th>
+      <th>Area lote</th>
+      <th>Test frente</th>
+      <th>Test direita</th>
+      <th>Test fundos</th>
+      <th>Test esquerda</th>
+      <th>N test</th>
+      <th>Area test</th>
+      <th>Qtd test</th>
+      <th>Profu</th>
+      <th>Sarjeta</th>
+      <th>Coleta lixo</th>
+      <th>Agua</th>
+      <th>Esgoto</th>
+      <th>Iluminacao</th>
+      <th>Energia</th>
+      <th>Pavimentacao</th>
+      <th>Telefone</th>
+      <th>Guia</th>
+      <th>Situacao lote</th>
+      <th>Pedologia</th>
+      <th>Urbanismo</th>
+      <th>Terreno</th>
+      <th>Nivel rua</th>
+      <th>Ocupacao</th>
+      <th>Valor m terreno</th>
+      <th>Valor venal</th>
+      <th>Valor pvg</th>
+      <th>Descricao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bcis.each do |bci| %>
+      <tr>
+        <td><%= bci.unidade_id %></td>
+        <td><%= bci.data_cadastro %></td>
+        <td><%= bci.zoneamento %></td>
+        <td><%= bci.tp_patrimonio %></td>
+        <td><%= bci.classe_edif %></td>
+        <td><%= bci.pavimento %></td>
+        <td><%= bci.padrao %></td>
+        <td><%= bci.utilizacao %></td>
+        <td><%= bci.material %></td>
+        <td><%= bci.ano_const %></td>
+        <td><%= bci.area_const %></td>
+        <td><%= bci.area_lote %></td>
+        <td><%= bci.test_frente %></td>
+        <td><%= bci.test_direita %></td>
+        <td><%= bci.test_fundos %></td>
+        <td><%= bci.test_esquerda %></td>
+        <td><%= bci.n_test %></td>
+        <td><%= bci.area_test %></td>
+        <td><%= bci.qtd_test %></td>
+        <td><%= bci.profu %></td>
+        <td><%= bci.sarjeta %></td>
+        <td><%= bci.coleta_lixo %></td>
+        <td><%= bci.agua %></td>
+        <td><%= bci.esgoto %></td>
+        <td><%= bci.iluminacao %></td>
+        <td><%= bci.energia %></td>
+        <td><%= bci.pavimentacao %></td>
+        <td><%= bci.telefone %></td>
+        <td><%= bci.guia %></td>
+        <td><%= bci.situacao_lote %></td>
+        <td><%= bci.pedologia %></td>
+        <td><%= bci.urbanismo %></td>
+        <td><%= bci.terreno %></td>
+        <td><%= bci.nivel_rua %></td>
+        <td><%= bci.ocupacao %></td>
+        <td><%= bci.valor_m_terreno %></td>
+        <td><%= bci.valor_venal %></td>
+        <td><%= bci.valor_pvg %></td>
+        <td><%= bci.descricao %></td>
+        <td><%= link_to 'Show', bci %></td>
+        <td><%= link_to 'Edit', edit_bci_path(bci) %></td>
+        <td><%= link_to 'Destroy', bci, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+ </div>
+<br>
+
+<%= link_to 'New Bci', new_bci_path %>

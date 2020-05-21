@@ -1,0 +1,107 @@
+<%= form_with(model: unidade, local: true) do |form| %>
+  <% if unidade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(unidade.errors.count, "error") %> prohibited this unidade from being saved:</h2>
+
+      <ul>
+        <% unidade.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cadastro_id %>
+    <%= form.text_field :cadastro_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :insc_imob %>
+    <%= form.text_field :insc_imob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :insc_imb_anterior %>
+    <%= form.text_field :insc_imb_anterior %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unidade %>
+    <%= form.number_field :unidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_imovel %>
+    <%= form.text_field :tipo_imovel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :matricula %>
+    <%= form.text_field :matricula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_face %>
+    <%= form.text_field :cod_face %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quadra %>
+    <%= form.text_field :quadra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lote %>
+    <%= form.text_field :lote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sub_lote %>
+    <%= form.text_field :sub_lote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :setor %>
+    <%= form.text_field :setor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :loteamento %>
+    <%= form.text_field :loteamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zoneamento %>
+    <%= form.text_field :zoneamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logradouro %>
+    <%= form.text_field :logradouro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cep %>
+    <%= form.text_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.text_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :complemento %>
+    <%= form.text_field :complemento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :info_complementar %>
+    <%= form.text_area :info_complementar %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,212 @@
+<%= form_with(model: bci, local: true) do |form| %>
+  <% if bci.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bci.errors.count, "error") %> prohibited this bci from being saved:</h2>
+
+      <ul>
+        <% bci.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :unidade_id %>
+    <%= form.text_field :unidade_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_cadastro %>
+    <%= form.datetime_select :data_cadastro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zoneamento %>
+    <%= form.text_field :zoneamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tp_patrimonio %>
+    <%= form.text_field :tp_patrimonio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :classe_edif %>
+    <%= form.text_field :classe_edif %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pavimento %>
+    <%= form.number_field :pavimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :padrao %>
+    <%= form.text_field :padrao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :utilizacao %>
+    <%= form.text_field :utilizacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material %>
+    <%= form.text_field :material %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ano_const %>
+    <%= form.datetime_select :ano_const %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_const %>
+    <%= form.text_field :area_const %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_lote %>
+    <%= form.text_field :area_lote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_frente %>
+    <%= form.text_field :test_frente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_direita %>
+    <%= form.text_field :test_direita %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_fundos %>
+    <%= form.text_field :test_fundos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_esquerda %>
+    <%= form.text_field :test_esquerda %>
+  </div>
+
+  <div class="field">
+    <%= form.label :n_test %>
+    <%= form.text_field :n_test %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_test %>
+    <%= form.text_field :area_test %>
+  </div>
+
+  <div class="field">
+    <%= form.label :qtd_test %>
+    <%= form.text_field :qtd_test %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profu %>
+    <%= form.text_field :profu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sarjeta %>
+    <%= form.check_box :sarjeta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coleta_lixo %>
+    <%= form.check_box :coleta_lixo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agua %>
+    <%= form.check_box :agua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :esgoto %>
+    <%= form.check_box :esgoto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :iluminacao %>
+    <%= form.check_box :iluminacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :energia %>
+    <%= form.check_box :energia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pavimentacao %>
+    <%= form.check_box :pavimentacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.check_box :telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :guia %>
+    <%= form.check_box :guia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :situacao_lote %>
+    <%= form.text_field :situacao_lote %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pedologia %>
+    <%= form.text_field :pedologia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :urbanismo %>
+    <%= form.check_box :urbanismo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :terreno %>
+    <%= form.text_field :terreno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nivel_rua %>
+    <%= form.text_field :nivel_rua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ocupacao %>
+    <%= form.text_field :ocupacao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_m_terreno %>
+    <%= form.text_field :valor_m_terreno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_venal %>
+    <%= form.text_field :valor_venal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_pvg %>
+    <%= form.text_field :valor_pvg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
